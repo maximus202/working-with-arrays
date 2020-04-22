@@ -10,7 +10,7 @@ class Memory {
         }
 
         let start = this.head;
-
+       
         this.head += size;
         return start;
     }
@@ -36,7 +36,7 @@ class Memory {
     }
 
     get(ptr) {
-        return this.memory[ptr];
+        return `Value: ${this.memory[ptr]}`;
     }
 
     set(ptr, value) {
